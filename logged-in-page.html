@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/add-on.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Mina sidor</title>
+    <link rel="shortcut icon" type="image/icon" href="images/favicon/favicon.ico"/>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top ᐱ</button>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.jpg" alt="färdtjänst logga"></a>
+            </div>
+            <form class="search-bar" action="/action_page.php">
+                <input type="text" placeholder="Skriv ett nyckelord..." name="search2">
+                <button type="submit"><i class="search-submit">SÖK</i></button>
+            </form>
+            <nav class="topnav" id="myTopnav">
+                <a href="index.html" class="active">HEM</a>
+                <div class="dropdown">
+                    <button class="dropbtn">INFORMATION ᐯ
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                <div class="dropdown-content">
+                    <a href="fardtjanstresor.html">FÄRDTJÄNSTRESOR</a>
+                    <a href="sjukresor.html">SJUKRESOR</a>
+                    <a href="tjansteresor.html">TJÄNSTERESOR</a>
+                    <a href="lagar.html">LAGAR & REGLER</a>
+                    </div>
+                </div> 
+                <a href="forms.html">BLANKETTER</a>
+                <a href="news.html">NYHETER</a>
+                <a href="service.html">KUNDSERVICE</a>
+                <a href="my-page.html">MINA SIDOR</a>
+                <a href="javascript:void(0);"  class="icon" onclick="myFunction()">&#9776;</a>
+            </nav>
+        </header>
+        <div class="title" id="title-color3">
+            <h1>MINA SIDOR</h1>
+            <p class="phone-title-info">Kundservice eller boka färdtjänst: 08 -720 80 80</p>
+        </div>
+        <div class="content">
+            <div class="box3">
+                <div class="info">
+                    <h2>MIN SIDA</h2>
+                    <p>Här kan du se dina uppgifter,  boka, ändra eller ta bort bokningar. Om du vill boka upprepade resor eller avboka dessa, kontakta gärna kundtjänst på 08-720 80 80.</p>
+                    <p class="bold-text">Du kan se:</p>
+                    <p>* Se all din information</p>
+                    <p>* Se och beställa resor 28 dagar framåt i tiden</p>
+                    <p>* Se dina tidigare resor 5 månader bakåt i tiden</p>
+                </div>
+                <div class="info2">
+                    <h2>PERSONLIG INFORMATION</h2>
+                    <p> 
+                        <b>NAMN: </b>Sven Svensson <br>
+                        <b>PERSONNUMMER: </b>ÅÅÅÅ-MM-DD-**** <br>
+                        <b>NUMMER:  </b>070 123 45 67 <br>
+                        <b>E-MAIL: </b>sven.svensson@gmail.com <br>
+                        <b>ADRESS:  </b>Sveavägen 4, 110 10, Stockholm<br>
+                        <b>FÄRDTJÄNST KORTNR: </b>123456-7890<br>
+                    </p>
+                    <a class="booking-link-right" href="">Ändra</a>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="info">
+                    <h2>BOKA RESA</h2>
+                    <p>Välj vilken dag, tid och plats du vill boka färdtjänst, det går endast att boka 28 dagar framåt.</p>
+                    <h2>SKRIV IN ADRESS DU VILL BLI UPPHÄMTAD OCH KÖRD TILL, KRYSSA I ELLER VÄLJ TID:</h2>
+                    <div class="form-columns">
+                        <div class="avresa">
+                            <p class="bold-text">FRÅN:</p>
+                            <form class="travel-form" action="/action_page.php">
+                                <label class="check">Så snart som det går
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label for="avresa">DAG & TID:</label> <br>
+                                <input type="datetime-local" id="avresa" name="avresa"> <br>
+                                <label for="streetname">Gatunamn & nummer:</label>
+                                <input type="text" id="streetname" placeholder="Skriv in Gatunamn & nummer" name="streetname" required>
+                                <label for="postnr">Postnummer:</label>
+                                <input type="text" id="postnr" placeholder="Skriv in postnummer" name="postnr" required>
+                                <label for="city">Ort:</label>
+                                <input type="text" id="city" placeholder="Skriv in ort" name="city" required>
+                            </form>
+                        </div>
+                        <div class="hemresa">
+                            <p class="bold-text">TILL:</p>
+                            <form class="travel-form" action="/action_page.php">
+                                <label for="streetname2">Gatunamn & nummer:</label>
+                                <input type="text" id="streetname2" placeholder="Skriv in Gatunamn & nummer" name="streetname2" required>
+                                <label for="postnr2">Postnummer:</label>
+                                <input type="text" id="postnr2" placeholder="Skriv in postnummer" name="postnr" required>
+                                <label for="city2">Ort:</label>
+                                <input type="text" id="city2" placeholder="Skriv in ort" name="city2" required>
+                                <label for="city2">Hjälpmedel:</label>
+                                <input type="text" id="hjalpmedel" placeholder="Rullstol/Ledarhund" name="city2" required>
+                            </form>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="check">Returresa
+                            <input type="checkbox" checked="checked" required>
+                            <span class="checkmark"></span>
+                        </label>
+                        <form action="check">
+                            <label class="check">Ja, jag vill att resan skall upprepas för de fyra kommande veckor.
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                        </form>
+                    <button class="book-button" type="submit">BOKA RESA</button> 
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="info">
+                    <div class="form-columns">
+                        <div class="avresa">
+                            <h2>BOKNINGAR</h2>
+                            <div class="booking">
+                                <b>Avresa:</b>
+                                <b>2021-05-04, kl.17.00</b> <br>
+                                <p>Sveavägen 4, 110 10</p>
+                                <b>Tillbaka resa:</b>
+                                <b>2021-05-04, kl.17.00</b> <br>
+                                <p>Sveavägen 4, 110 10</p>
+                                <a class="booking-link" href="">Ändra</a> &#124; <a class="booking-link" href="">Ta bort</a>
+                            </div>
+                            <div class="booking">
+                                <b>Avresa:</b>
+                                <b>2021-05-04, kl.17.00</b> <br>
+                                <p>Sveavägen 4, 110 10</p>
+                                <b>Tillbaka resa:</b>
+                                <b>2021-05-04, kl.17.00</b> <br>
+                                <p>Sveavägen 4, 110 10</p>
+                                <a class="booking-link" href="">Ändra</a> &#124; <a class="booking-link" href="">Ta bort</a>
+                            </div>
+                            <div class="booking">
+                                <b>Avresa:</b>
+                                <b>2021-05-04, kl.17.00</b> <br>
+                                <p>Sveavägen 4, 110 10</p>
+                                <b>Tillbaka resa:</b>
+                                <b>2021-05-04, kl.17.00</b> <br>
+                                <p>Sveavägen 4, 110 10</p>
+                                <a class="booking-link" href="">Ändra</a> &#124; <a class="booking-link" href="">Ta bort</a>
+                            </div>
+                            <br>
+                            <a class="las-mer-blue" href="">VISA FLER ᐯ</a>
+                        </div>
+                        <div class="hemresa">
+                            <h2 class="h2-booking">BOKNINGS HISTORIK</h2>
+                            <div class="booking">
+                                <b>Avresa:</b>
+                                <b>2021-05-04, kl.17.00</b> <br>
+                                <p>Sveavägen 4, 110 10</p>
+                                <b>Tillbaka resa:</b>
+                                <b>2021-05-04, kl.17.00</b> <br>
+                                <p>Sveavägen 4, 110 10</p>
+                            </div>
+                            <div class="booking">
+                                <b>Avresa:</b>
+                                <b>2021-05-04, kl.17.00</b> <br>
+                                <p>Sveavägen 4, 110 10</p>
+                                <b>Tillbaka resa:</b>
+                                <b>2021-05-04, kl.17.00</b> <br>
+                                <p>Sveavägen 4, 110 10</p>
+                            </div>
+                            <div class="booking">
+                                <b>Avresa:</b>
+                                <b>2021-05-04, kl.17.00</b> <br>
+                                <p>Sveavägen 4, 110 10</p>
+                                <b>Tillbaka resa:</b>
+                                <b>2021-05-04, kl.17.00</b> <br>
+                                <p>Sveavägen 4, 110 10</p>
+                            </div>
+                            <br>
+                            <a class="las-mer-blue" href="">VISA FLER ᐯ</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Footer/adress -->
+        <footer>
+            <div class="footer">
+                <div class="footer-column">
+                    <ul>
+                        <li><a class="link" href="fardtjanstresor.html">Färdtjänstresor &#62;&#62;</a> </li>
+                        <li><a class="link" href="sjukresor.html">Sjukresa &#62;&#62;</a></li>
+                        <li><a class="link" href="tjansteresor.html">Tjänsteresor &#62;&#62;</a></li>
+                        <li><a class="link" href="service.html">Kundservice &#62;&#62;</a></li>
+                        <li><a class="link" href="blankett.html">Blanketter &#62;&#62;</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><h5>Kundservice</h5></li>
+                        <li>Helgfri vardagar klockan 7-20</li>
+                        <li><a class="link" href="tel:087208080">08 - 720 80 80</a></li>
+                        <li><h5>Resegaranti</h5></li>
+                        <li>Öppet dygnet runt</li>
+                        <li><h5>Talsvar för beställningar</h5></li>
+                        <li>Öppet dygnet runt</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><a class="link" href="https://sl.se/">Till sl.se &#62;&#62;</a></li>
+                        <li><a class="link" href="https://sl.se/globalassets/alla-har-sitt-satt-att-resa-swe.pdf">Tillgänglighet i SL trafiken &#62;&#62;</a></li>
+                        <li><a class="link" href="https://waxholmsbolaget.se/">Till waxholmsbolaget &#62;&#62;</a></li>
+                        <li><a class="link" href="https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-1997736-om-fardtjanst_sfs-1997-736#:~:text=Tillst%C3%A5nd%20till%20f%C3%A4rdtj%C3%A4nst&text=myndighet%20(tillst%C3%A5ndsgivaren).-,Lag%20(2010%3A1068).,att%20resa%20med%20allm%C3%A4nna%20kommunikationsmedel.">Till lagar och regler &#62;&#62;</a></li>
+                        <li></li>
+                        <li><a class="link" href="tillganglighetsredogorelse.html">Tillgänglighetsredogörelse &#62;&#62;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+
+        //responsive nav bar
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        }
+    </script>
+</body>
+</html>
+
+
+

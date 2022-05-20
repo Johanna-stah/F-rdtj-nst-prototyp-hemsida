@@ -1,0 +1,207 @@
+ /*CONTACT FORM*/
+.contact-form{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .form{
+      margin-top: 20px;
+  }
+  .form input[type="text"], input[type="email"]{
+    padding: 5px 0px 5px 0px;
+    height: 25px;
+    margin-bottom: 15px;
+  }
+  .form textarea { 
+    min-height: 10em;
+  }
+  .form-button {
+    padding: 10px; 
+    background-color: #2E728F; 
+    color: white;
+    width: 100%; 
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  .form textarea, input[type="text"], input[type="email"]{
+    border-radius: 2px;
+    border: 1px solid #094B67; 
+  }
+  .form textarea, input[type="text"], input[type="email"]{
+    width: 100%; 
+  }
+
+  /*CONTACT INFO*/
+   .contact-info{
+    padding: 10px;
+   }
+   .contact{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+   }
+   .contact-box1{
+    border-left: solid 8px #487854;
+    margin-bottom: 20px;
+   }
+   .contact-box2{
+    border-left: solid 8px #2E728F;
+    margin-bottom: 20px;
+   }
+   .contact-box3{
+    border-left: solid 8px #B41A3F;
+    margin-bottom: 20px;
+   }
+
+   /*TRAVEL FORM*/
+   .travel-form{
+     margin-bottom: 20px;
+   }
+   .travel-form label{
+    font-weight: bold;
+  }
+   .travel-form input  {
+     border: solid 2px #094B67;
+     padding: 10px 0px 10px 0px;
+     margin-top: 5px;
+     margin-bottom: 5px;
+   }
+   .form-columns{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+   }
+   .avresa{
+     margin-right: 10px;
+   }
+   .hemresa{
+     margin-left: 10px;
+   }
+
+    /*BOOK BUTTON */
+   .book-button {
+    padding: 10px; 
+    background-color: #2E728F; 
+    color: white;
+    width: 100%; 
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  .booking{
+    border-bottom: solid 2px #C2C8CC;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-right: 20px;
+  }
+  .booking-link{
+    font-weight: bold;
+    color: #B41A3F;
+    text-decoration: underline;
+  }
+  .booking-link-right{
+    font-weight: bold;
+    color: #B41A3F;
+    text-decoration: underline;
+    float: right;
+  }
+   
+/* The check */
+.check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default checkbox */
+.check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: solid 2px #094B67;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the checkmark when checked */
+.check input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the checkmark/indicator */
+.check .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+   /*BANK ID BUTTON */
+   .bankid-button {
+    padding: 10px; 
+    background-color: #2E728F; 
+    color: white;
+    width: 50%; 
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 700px){
+    .contact{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 600px){
+    .bankid-button{
+      width: 100%;
+    }
+    .form-columns{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .booking{
+      margin-right: 0px;
+    }
+    .h2-booking{
+      margin-top: 30px;
+    }
+    .avresa{
+      margin-right: 0px;
+    }
+    .hemresa{
+      margin-left: 0px;
+    }
+ 
+  }
